@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+h1{
+    font-family: 'Monoton', cursive; 
+    margin:12rem 12rem;
+    padding: 0;
+    color: #111;
+    font-size: 3rem;
+}
+h1 span{
+    font-family: 'Monoton', cursive; 
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+
+}
+h1 span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+h1 span:nth-child(2)
+{
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(3)
+{
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(4)
+{
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(5)
+{
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(6)
+{
+    animation-delay: 1s;
+}
+@keyframes animate{
+    0%,100%{
+        color: white;
+        filter: blur(2px);
+        text-shadow:0 0 10px #0077ff,
+                    0 0 20px #0077ff,
+                    0 0 40px #0077ff,
+                    0 0 80px #0077ff,
+                    0 0 120px #0077ff,
+                    0 0 200px #0077ff;
+    }
+    5%,95%{
+        color: #111;
+        filter: blur(0);
+        text-shadow: none;
+    }
+}
